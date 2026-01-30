@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_테두리</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            list-style: none;
+            background-color: #def5ff;
+            width: 150px;
+            height: 50px;
+            margin: 20px;
+            padding: 10px;
+            font-size: 18px;
+            box-sizing: border-box;
+            /* 테두리, 패딩 포함하여 사이즈 설정 */
+        }
+        ul .border-01 {
+            border: solid 2px wheat;
+        }
+
+        ul .border-02 {
+            border: dotted 2px yellowgreen;
+        }
+
+        ul .border-03 {
+            border-bottom: dashed 1px #c0c0c0;
+            border-top: dashed 1px #c0c0c0;
+            /* left, right, top, bottom 전부 사용 가능 */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="border-01">테두리 1</li>
+        <li class="border-02">테두리 2</li>
+        <li class="border-03">테두리 3</li>
+    </ul>
+</body>
+</html>

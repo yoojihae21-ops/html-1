@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-01 {
+            height: 300px;
+            background-color: azure;
+            margin-top: 0px;
+            position: relative;
+        }
+
+        .box-01 p {
+            background-color: #bbaa94;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: beige;
+            margin: 150px auto;
+            position: relative;
+        }
+
+        .box p {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        .box p:nth-child(1) {
+            background-color: bisque;
+            top: 100px;
+            left: 100px;
+        }
+
+        .box p:nth-child(2) {
+            background-color: aqua;
+            left: 0;
+            top: -100px;
+        }
+
+        .box p:nth-child(3) {
+            background-color: blueviolet;
+            right: 0;
+            bottom: 0;
+        }
+
+        .box p:nth-child(4) {
+            background-color: aquamarine;
+            left: 0;
+            bottom: -100px;
+        }
+
+        .box p:nth-child(5) {
+            background-color: cadetblue;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+        }
+
+        .box p:nth-child(6) {
+            background-color: burlywood;
+            position: sticky;
+            top: 30px;
+        }
+
+        body {
+            height: 3000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-01">
+        <p>absolute</p>
+    </div> <!-- box-01 -->
+
+    <div class="box">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+    </div> <!-- box -->
+</body>
+</html>

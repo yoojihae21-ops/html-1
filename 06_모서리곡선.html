@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_모서리곡선</title>
+    <style>
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+            font-weight: 300;
+            font-display: swap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+            background-color: antiquewhite;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            text-align: center;
+            line-height: 200px;
+            font-family: 'Pretendard';
+            font-weight: 300;
+            border: dashed 1px lightblue;
+        }
+
+        ul .radius-01 {
+            border-radius: 20px;
+        }
+
+        ul .radius-02 {
+            border-radius: 50px 5px;
+        }
+
+        ul .radius-03 {
+            border-radius: 20px 30% 100px;
+        }
+
+        ul .radius-04 {
+            border-radius: 20px 20px 100px 100px;
+            background-color: #ffc2c2;
+        }
+
+        ul .radius-05 {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="radius-01">모서리곡선 1</li>
+        <li class="radius-02">모서리곡선 2</li>
+        <li class="radius-03">모서리곡선 3</li>
+        <li class="radius-04">모서리곡선 4</li>
+        <li class="radius-05">모서리곡선 5</li>
+    </ul>
+</body>
+
+</html>

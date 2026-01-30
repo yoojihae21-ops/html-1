@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지위에텍스트</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .box p {
+            color: white;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .list {
+            width: 1280px;
+            /* ㄴ 컨테이너 값 */
+            margin: 100px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .list .item {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden; /* 벗어난 영역 숨기기 처리 */
+        }
+
+        .list .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .list .item p {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            color: white;
+            background-color: #ffffff31;
+            width: 100%;
+            padding: 16px 16px;
+            box-sizing: border-box;
+            backdrop-filter: blur(7px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="img/mitchell-orr-O9m0Sa5t-hw-unsplash.jpg" alt="배경사진">
+        <p>이벤트</p>
+    </div> <!-- box -->
+
+    <div class="list">
+        <div class="item">
+            <img src="img/paul-yong-UkeFtxuGSxs-unsplash.jpg" alt="">
+            <p>item 1</p>
+        </div> <!-- item -->
+        
+        <div class="item">
+            <img src="img/dillon-hunt-9OJwwOsQPCQ-unsplash.jpg" alt="">
+            <p>item 2</p>
+        </div> <!-- item -->
+        
+        <div class="item">
+            <img src="img/paul-yong-loFQ0lrmexU-unsplash.jpg" alt="">
+            <p>item 3</p>
+        </div> <!-- item -->
+    </div> <!-- list -->
+</body>
+</html>
