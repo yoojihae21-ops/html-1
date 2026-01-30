@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13_수직정렬</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .list h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .list img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .item {
+            width: 300px;
+            height: 300px;
+            background-color: skyblue;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column; /* 방향 수직으로 바꾸기 */
+            justify-content: space-between;
+        }
+
+        .item .text p {
+            background-color: aliceblue;
+            width: 80px;
+            height: 30px;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 28px
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div>
+        <h1>제목넣기</h1>
+        <p>웹과 앱을 만들어 나가는 사용자 <br /> 중심의 서비스를 제공합니다.</p>
+        </div>
+        <img src="img/alexander-lunyov-jdBFglNgYKc-unsplash.jpg" alt="바닷가">
+    </div> <!-- list -->
+
+    <div class="item">
+        <div class="text">
+            <p>news</p>
+            <h2>html 수직정렬 2</h2>
+        </div> <!-- text -->
+
+        <span>2026.01.30</span>
+        <!-- 아무런 의미 없는 태그 = 쓸만한 태그가 없을 때 사용가능 -->
+    </div> <!-- item -->
+</body>
+</html>
