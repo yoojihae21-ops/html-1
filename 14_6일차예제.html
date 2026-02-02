@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14_6일차예제</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section1 {
+            width: 1920px;
+            background-color: aliceblue;
+            margin: 0 auto;
+            padding: 120px;
+            box-sizing: border-box;
+        }
+
+        .section1 .box {
+            width: 1280px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        .section1 .box .text .title {
+            font-size: 75px;
+            font-weight: bolder;
+            margin-bottom: 60px;
+        }
+
+        .section1 .box .text .content p:nth-child(1) {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section1 .box img {
+            width: 735px;
+            height: 550px;
+            object-fit: cover;
+        }
+
+        .section2 {
+            width: 1920px;
+            margin: 0 auto;
+            padding: 120px;
+            box-sizing: border-box;
+        }
+
+        .section2 .box {
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        .section2 .box .title {
+            font-size: 75px;
+            font-weight: bolder;
+            margin-bottom: 20px;
+        }
+
+        .section2 .box .subtitle {
+            margin-bottom: 50px;
+        }
+
+        .section2 .box .list {
+            width: 1280px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section2 .box .list .item {
+            width: 299px;
+            height: 360px;
+            padding: 36px;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .section2 .box .list .item .txt .tag {
+            background-color: white;
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            border-radius: 30px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+
+        .section2 .box .list .item .txt .text1 {
+            font-size: 23px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        .section2 .box .list .item span {
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section1">
+        <div class="box">
+            <div class="text">
+                <p class="title">PRODUCT</p>
+                <div class="content">
+                    <p>WEB & APP SERVICE</p>
+                    <p>웹과 앱을 아우르는 통합 디지털 플랫폼을 통해 <br /> 사용자 중심의 경험과 안정적인 서비스를 제공합니다. <br /> 기획부터 디자인, 개발까지 <br /> 완성도 높은
+                        웹·앱 솔루션을 소개합니다.</p>
+                </div> <!-- content -->
+            </div> <!-- text -->
+            <img src="img/paul-yong-UkeFtxuGSxs-unsplash.jpg" alt="">
+        </div> <!-- box -->
+    </div> <!-- section1 -->
+
+    <div class="section2">
+        <div class="box">
+            <p class="title">NEWS</p>
+            <p class="subtitle">웹/앱의 새로운 소식을 알려드립니다.</p>
+            <div class="list">
+                <div class="item">
+                    <div class="txt">
+                        <p class="tag">NEWS</p>
+                        <p class="text1">[UPDATE] 모바일 앱 v2.5 정식 출시</p>
+                        <p class="text2">앱 성능과 사용성을 대폭 개선한 v.2.5 업데이트가 배포되었습니다.</p>
+                    </div> <!-- txt -->
+
+                    <span>26.01.30</span>
+                </div> <!-- item -->
+
+                <div class="item">
+                    <div class="txt">
+                        <p class="tag">NEWS</p>
+                        <p class="text1">웹 서비스 리뉴얼 업데이트 안내</p>
+                        <p class="text2">서비스 메인 페이지와 대시보드 UI가 새롭게 개편되었습니다.</p>
+                    </div> <!-- txt -->
+
+                    <span>26.01.30</span>
+                </div> <!-- item -->
+
+                <div class="item">
+                    <div class="txt">
+                        <p class="tag">NEWS</p>
+                        <p class="text1">UX 리서치 결과 리포트 공개</p>
+                        <p class="text2">최근 진행한 웹/앱 UX 테스트 결과 리포트를 공개합니다.</p>
+                    </div> <!-- txt -->
+
+                    <span>26.01.30</span>
+                </div> <!-- item -->
+
+                <div class="item">
+                    <div class="txt">
+                        <p class="tag">NEWS</p>
+                        <p class="text1">신규 기능: 실시간 알림 센터 추가</p>
+                        <p class="text2">웹과 앱에서 동일하게 사용할 수 있는 실시간 알림 센터 기능이 추가되었습니다.</p>
+                    </div> <!-- txt -->
+
+                    <span>26.01.30</span>
+                </div> <!-- item -->
+            </div> <!-- list -->
+
+        </div> <!-- box -->
+    </div> <!-- section2 -->
+</body>
+
+</html>
