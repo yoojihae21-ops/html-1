@@ -18,6 +18,33 @@ h1 {
     font-size: 80px;
 }
 
+/* section-01 */
+.section-01 {
+    background-color: rgb(235, 245, 255);
+    padding: 100px 0;
+}
+.section-01 .inner {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ebebeb;
+}
+.section-01 .inner h2 {
+    margin-bottom: 60px;
+    font-size: 40px;
+    text-align: center;
+}
+.section-01 .inner .list {
+    display: flex;
+    justify-content: space-between;
+}
+.section-01 .inner .list .item {
+    width: 24%;
+    background-color: white;
+    padding: 20px;
+}
+.section-01 .inner .list .item p {}
+
 /* 화면의 크기가 1024px 이하일 때 스타일 변화(태블릿 가로) */
 @media screen and (max-width:1024px) {
     h1 {
@@ -32,6 +59,15 @@ h1 {
         font-size: 20px;
         color: blueviolet;
     }
+
+    .section-01 .inner .list {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .section-01 .inner .list .item {
+        width: 49%;
+    }
 } /* max-width:768px */
 
 /* 화면의 크기가 480px 이하일 때 스타일 변화(모바일) */
@@ -41,5 +77,14 @@ h1 {
         font-size: 16px;
         color: cadetblue;
         text-align: left;
+    }
+
+    .section-01 .inner .list {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .section-01 .inner .list .item {
+        width: 100%;
     }
 } /* max-width:480px */
