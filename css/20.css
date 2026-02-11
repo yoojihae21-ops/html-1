@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.bg-01 {
+    height: 500px;
+    background-color: aliceblue;
+    background-position: center;
+    /* left right top bottom center */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/paul-yong-loFQ0lrmexU-unsplash.jpg');
+}
+
+.bg-02 {
+    margin: 100px 0;
+    height: 500px;
+    /* background 속기법 한줄 표기 */
+    /* background: 이미지경로 위치 / 크기 반복 고정 */
+    background: url('../img/mitchell-orr-O9m0Sa5t-hw-unsplash.jpg') center / cover no-repeat gray fixed;
+}
+
+.bg-03 {
+    height: 500px;
+    /* 그라디언트 io = 그라데이션 코드 만들어주는 곳 */
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(66, 44, 192, 1) 25%, rgba(253, 29, 29, 1) 50%, rgba(252, 51, 135, 1) 77%, rgba(252, 176, 69, 1) 100%);
+}
