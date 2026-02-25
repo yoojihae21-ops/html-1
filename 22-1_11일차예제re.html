@@ -22,6 +22,20 @@
                     <li><a href="#">연락처</a></li>
                 </ul><!-- gnb -->
             </nav><!-- nav -->
+
+            <div class="mobile_menu mobile">
+                <img src="img/icons8-메뉴-32.png" alt="">
+            </div> <!-- mobile_menu -->
+
+            <nav class="mobile_nav mobile">
+                <ul class="gnb">
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">서비스</a></li>
+                    <li><a href="#">연락처</a></li>
+                </ul><!-- gnb -->
+            </nav><!-- mobile_nav -->
+
         </div><!-- inner -->
     </header><!-- header -->
 
@@ -146,6 +160,17 @@
             </div><!-- inner -->
         </section><!-- section-03 -->
     </main><!-- main -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        //클래스명 mobile_menu를 클릭했을 때 실행
+        //클래스명 mobile_nav에게 클래스명('active') 제어
+
+        //제이쿼리로 작성이 됨
+        $('.mobile_menu').click(function(){
+            $('.mobile_nav').toggleClass('active')
+        })
+    </script>
 </body>
 
 </html>
